@@ -26,9 +26,6 @@ set hlsearch    " highlight matches
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 
-" Include FZF wrapper
-set rtp+=/usr/local/opt/fzf
-
 " Keybindings
 " -----------
 
@@ -39,10 +36,15 @@ imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 " Find Git merge conflict markers
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
-" Files and buffers mappings for FZF
-nmap <leader>sf :Files<CR>
-nmap <leader>sb :Buffers<CR>
-nmap <leader>sc :Commits<CR>
+if executable("fzf")
+  " Include FZF wrapper
+  set rtp+=/usr/local/opt/fzf
+
+  " Files, buffers and commits mappings for FZF
+  noremap <leader>sf :Files<CR>
+  noremap <leader>sb :Buffers<CR>
+  noremap <leader>sc :Commits<CR>
+endif
 
 " Use Ripgrep as our search tool
 if executable("rg")
