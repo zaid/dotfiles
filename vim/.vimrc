@@ -46,8 +46,11 @@ if executable("fzf")
   noremap <leader>sc :Commits<CR>
 endif
 
-" Use Ripgrep as our search tool
 if executable("rg")
+  " Use Ripgrep as our search tool
   set grepprg=rg\ --vimgrep\ --no-heading
   set grepformat=%f:%l:%c:%m,%f:%l:%m
+
+  " VimGrepper mappings
+  noremap <leader>g :Grepper -tool rg<CR>
 endif
