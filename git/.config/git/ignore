@@ -14,3 +14,6 @@ Icon
 *.swp
 .projections.json
 Session.vim
+
+# Erlang's Beam files
+*.beam
