@@ -33,9 +33,6 @@ set smartcase   " ... unless they contain at least one capital letter
 nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
 imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 
-" Find Git merge conflict markers
-nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR>
-
 if executable("fzf")
   " Include FZF wrapper
   set rtp+=/usr/local/opt/fzf
