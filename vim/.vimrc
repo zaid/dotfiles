@@ -30,8 +30,7 @@ set smartcase   " ... unless they contain at least one capital letter
 " -----------
 
 " Toggle paste mode
-nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
-imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
+set pastetoggle=<F4>
 
 if executable("fzf")
   " Include FZF wrapper
