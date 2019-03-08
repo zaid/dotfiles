@@ -29,6 +29,7 @@ if ! [[ -d $VIM_PACKAGES_ROOT ]]; then
   git clone --depth 1 https://github.com/tpope/vim-projectionist.git $VIM_PACKAGES_ROOT/tools/start/vim-projectionist
   git clone --depth 1 https://github.com/tpope/vim-dispatch.git $VIM_PACKAGES_ROOT/tools/start/vim-dispatch
   git clone --depth 1 https://github.com/tpope/vim-obsession.git $VIM_PACKAGES_ROOT/tools/start/vim-obsession
+  git clone --depth 1 https://github.com/tpope/vim-dadbod.git $VIM_PACKAGES_ROOT/tools/start/vim-dadbod
 
   # Prezto
   git clone --depth 1 --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
