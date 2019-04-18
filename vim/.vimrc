@@ -1,7 +1,56 @@
-" Theme
+" Colorscheme background
 set background=dark
-let g:gruvbox_contrast_dark = "hard"
-colorscheme gruvbox
+
+" Try to load minpac
+packadd minpac
+
+if exists('*minpac#init')
+  " Init minpac and set the status window to horizontal
+  call minpac#init({'status_open': 'horizontal'})
+
+  " Colorscheme plugins
+  call minpac#add('morhetz/gruvbox')
+
+  " Editor plugins
+  call minpac#add('ervandew/supertab')
+  call minpac#add('easymotion/vim-easymotion')
+  call minpac#add('terryma/vim-multiple-cursors')
+  call minpac#add('tpope/vim-endwise')
+  call minpac#add('tpope/vim-sensible')
+  call minpac#add('tpope/vim-unimpaired')
+  call minpac#add('tpope/vim-vinegar')
+  call minpac#add('tpope/vim-apathy')
+
+  " Language support plugins
+  call minpac#add('sheerun/vim-polyglot')
+
+  " Search plugins
+  call minpac#add('mhinz/vim-grepper')
+  call minpac#add('junegunn/fzf.vim')
+
+  " Statusbar plugins
+  call minpac#add('tpope/vim-flagship')
+
+  " Tools plugins
+  call minpac#add('tpope/vim-rails')
+  call minpac#add('tpope/vim-fugitive')
+  call minpac#add('tpope/vim-projectionist')
+  call minpac#add('tpope/vim-dispatch')
+  call minpac#add('tpope/vim-obsession')
+  call minpac#add('tpope/vim-dadbod')
+  call minpac#add('tpope/vim-tbone')
+
+  " Minpac utility functions
+  command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
+  command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
+  command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
+
+  " Plugin settings
+
+  " Set colorscheme to gruvbox
+  let g:gruvbox_contrast_dark = "hard"
+  colorscheme gruvbox
+end
 
 " Spacing
 set tabstop=2
