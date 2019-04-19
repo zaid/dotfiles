@@ -49,7 +49,7 @@ if exists('*minpac#init')
 
   " Set colorscheme to gruvbox
   let g:gruvbox_contrast_dark = "hard"
-  colorscheme gruvbox
+  silent! colorscheme gruvbox
 end
 
 " Spacing
