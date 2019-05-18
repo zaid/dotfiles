@@ -3,5 +3,8 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+# IEx history
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 # Local config
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
