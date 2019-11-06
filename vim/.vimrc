@@ -89,6 +89,7 @@ if executable("fzf")
   noremap <leader>sf :Files<CR>
   noremap <leader>sb :Buffers<CR>
   noremap <leader>sc :Commits<CR>
+  noremap <leader>st :Tags<CR>
 endif
 
 if executable("rg")
