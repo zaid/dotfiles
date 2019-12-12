@@ -13,8 +13,6 @@ if exists('*minpac#init')
 
   " Editor plugins
   call minpac#add('ervandew/supertab')
-  call minpac#add('easymotion/vim-easymotion')
-  call minpac#add('terryma/vim-multiple-cursors')
   call minpac#add('tpope/vim-endwise')
   call minpac#add('tpope/vim-sensible')
   call minpac#add('tpope/vim-unimpaired')
