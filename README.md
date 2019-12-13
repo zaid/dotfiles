@@ -28,8 +28,6 @@ have that installed first (or use the supplied `install.zsh` script to do so). T
 are configured in `.vimrc`:
   - gruvbox
   - supertab
-  - vim-easymotion
-  - vim-multiple-cursors
   - vim-endwise
   - vim-sensible
   - vim-unimpaired
