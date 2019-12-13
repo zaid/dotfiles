@@ -12,7 +12,6 @@ if exists('*minpac#init')
   call minpac#add('morhetz/gruvbox')
 
   " Editor plugins
-  call minpac#add('ervandew/supertab')
   call minpac#add('tpope/vim-endwise')
   call minpac#add('tpope/vim-sensible')
   call minpac#add('tpope/vim-unimpaired')

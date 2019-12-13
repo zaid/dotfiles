@@ -27,7 +27,6 @@ I'm using [minpac](https://github.com/k-takata/minpac) to manage the plugins so 
 have that installed first (or use the supplied `install.zsh` script to do so). The following plugins
 are configured in `.vimrc`:
   - gruvbox
-  - supertab
   - vim-endwise
   - vim-sensible
   - vim-unimpaired
