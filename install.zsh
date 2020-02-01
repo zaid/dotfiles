@@ -20,6 +20,5 @@ git clone --depth 1 --recursive https://github.com/sorin-ionescu/prezto.git "${Z
 if [[ "$OSTYPE" == "darwin"* ]]; then
   brew install stow
   brew install tmux
-  brew install fzf
   brew install ripgrep
 fi

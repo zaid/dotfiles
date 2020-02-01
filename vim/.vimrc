@@ -23,7 +23,6 @@ if exists('*minpac#init')
 
   " Search plugins
   call minpac#add('mhinz/vim-grepper')
-  call minpac#add('junegunn/fzf.vim')
 
   " Statusbar plugins
   call minpac#add('tpope/vim-flagship')
@@ -78,16 +77,11 @@ set smartcase   " ... unless they contain at least one capital letter
 " Toggle paste mode
 set pastetoggle=<F4>
 
-if executable("fzf")
-  " Include FZF wrapper
-  set rtp+=/usr/local/opt/fzf
-
-  " Files, buffers and commits mappings for FZF
-  noremap <leader>sf :Files<CR>
-  noremap <leader>sb :Buffers<CR>
-  noremap <leader>sc :Commits<CR>
-  noremap <leader>st :Tags<CR>
-endif
+" Mappings for searching files, buffers, commits and tags
+noremap <leader>sf :find<space>
+noremap <leader>sb :buffer<space>
+noremap <leader>sc :Gclog --grep<space>
+noremap <leader>st :tag<space>
 
 if executable("rg")
   " Use Ripgrep as our search tool

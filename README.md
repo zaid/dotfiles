@@ -13,7 +13,6 @@
 ## Tools
 The installation script installs the following tools (if it detects that it is running on MacOS):
   - stow (for managing symlinks).
-  - fzf (fuzzy matcher).
   - ripgrep (a faster grep).
   - tmux (terminal multiplexer).
   
@@ -34,7 +33,6 @@ are configured in `.vimrc`:
   - vim-apathy
   - vim-polyglot
   - vim-grepper
-  - fzf.vim
   - vim-flagship
   - vim-rails
   - vim-fugitive
