@@ -36,8 +36,10 @@ are configured in `.vimrc`:
   - vim-flagship
   - vim-rails
   - vim-fugitive
+  - vim-rhubarb
   - vim-projectionist
   - vim-dispatch
   - vim-obsession
   - vim-dadbod
   - vim-tbone
+  - vim-rec

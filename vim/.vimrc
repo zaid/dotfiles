@@ -20,6 +20,7 @@ if exists('*minpac#init')
 
   " Language support plugins
   call minpac#add('sheerun/vim-polyglot')
+  call minpac#add('zaid/vim-rec')
 
   " Search plugins
   call minpac#add('mhinz/vim-grepper')
@@ -30,6 +31,7 @@ if exists('*minpac#init')
   " Tools plugins
   call minpac#add('tpope/vim-rails')
   call minpac#add('tpope/vim-fugitive')
+  call minpac#add('tpope/vim-rhubarb')
   call minpac#add('tpope/vim-projectionist')
   call minpac#add('tpope/vim-dispatch')
   call minpac#add('tpope/vim-obsession')
