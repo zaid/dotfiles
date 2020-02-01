@@ -89,5 +89,5 @@ if executable("rg")
   set grepformat=%f:%l:%c:%m,%f:%l:%m
 
   " VimGrepper mappings
-  noremap <leader>g :Grepper -tool rg<CR>
+  noremap <leader>sg :Grepper -tool rg<CR>
 endif
