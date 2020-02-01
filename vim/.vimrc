@@ -83,6 +83,10 @@ noremap <leader>sb :buffer<Space>
 noremap <leader>sc :Gclog --grep<Space>
 noremap <leader>st :tag<Space>
 
+" Mappings for Fugitive
+noremap <leader>gb :Gblame<CR>
+noremap <leader>gd :Gvdiffsplit!<CR>
+
 if executable("rg")
   " Use Ripgrep as our search tool
   set grepprg=rg\ --vimgrep\ --no-heading
