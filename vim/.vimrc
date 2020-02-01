@@ -78,10 +78,10 @@ set smartcase   " ... unless they contain at least one capital letter
 set pastetoggle=<F4>
 
 " Mappings for searching files, buffers, commits and tags
-noremap <leader>sf :find<space>
-noremap <leader>sb :buffer<space>
-noremap <leader>sc :Gclog --grep<space>
-noremap <leader>st :tag<space>
+noremap <leader>sf :find<Space>
+noremap <leader>sb :buffer<Space>
+noremap <leader>sc :Gclog --grep<Space>
+noremap <leader>st :tag<Space>
 
 if executable("rg")
   " Use Ripgrep as our search tool
