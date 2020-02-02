@@ -1,6 +1,11 @@
 " Colorscheme background
 set background=dark
 
+" Enable true colors
+if (has('termguicolors'))
+  set termguicolors
+endif
+
 " Try to load minpac
 packadd minpac
 
