@@ -25,7 +25,7 @@ The script also clones the following repositories:
 I'm using [minpac](https://github.com/k-takata/minpac) to manage the plugins so you will need to
 have that installed first (or use the supplied `install.zsh` script to do so). The following plugins
 are configured in `.vimrc`:
-  - gruvbox
+  - dracula
   - vim-endwise
   - vim-sensible
   - vim-unimpaired
