@@ -1,7 +1,7 @@
 ## Requirements
   - Zsh as your default shell.
   - Git is available in your path.
-  - Homebrew (or manually install the [tools](#tools)).
+  - MacPorts (or manually install the [tools](#tools)).
   - Vim version 8.0.0050+ (or Neovim 0.2+)
   
 ## Installation

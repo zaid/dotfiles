@@ -18,7 +18,7 @@ fi
 git clone --depth 1 --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  brew install stow
-  brew install tmux
-  brew install ripgrep
+  sudo port install stow
+  sudo port install tmux
+  sudo port install ripgrep
 fi
