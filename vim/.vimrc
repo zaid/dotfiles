@@ -17,7 +17,7 @@ if exists('*minpac#init')
   call minpac#init({'status_open': 'horizontal'})
 
   " Colorscheme plugins
-  call minpac#add('morhetz/gruvbox')
+  call minpac#add('dracula/vim', { 'name': 'dracula' })
 
   " Editor plugins
   call minpac#add('tpope/vim-endwise')
@@ -53,9 +53,9 @@ if exists('*minpac#init')
 
   " Plugin settings
 
-  " Set colorscheme to gruvbox
-  let g:gruvbox_contrast_dark = "hard"
-  silent! colorscheme gruvbox
+  " Set colorscheme to dracula
+  packadd! dracula
+  silent! colorscheme dracula
 end
 
 " Spacing
