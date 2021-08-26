@@ -84,9 +84,6 @@ set smartcase   " ... unless they contain at least one capital letter
 " Keybindings
 " -----------
 
-" Toggle paste mode
-set pastetoggle=<F4>
-
 " Mappings for searching files, buffers, commits and tags
 noremap <leader>sf :find<Space>
 noremap <leader>sb :buffer<Space>
