@@ -91,7 +91,7 @@ noremap <leader>sc :Gclog --grep<Space>
 noremap <leader>st :tag<Space>
 
 " Mappings for Fugitive
-noremap <leader>gb :Gblame<CR>
+noremap <leader>gb :Git blame<CR>
 noremap <leader>gd :Gvdiffsplit!<CR>
 
 if executable("rg")
