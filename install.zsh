@@ -1,12 +1,10 @@
 #!/usr/bin/env zsh
 
-RBENV_ROOT=${RBENV_ROOT:-$HOME/.rbenv}
+ASDF_ROOT=${ASDF_ROOT:-$HOME/.asdf}
 VIM_PACKAGES_ROOT=${VIM_PACKAGES_ROOT:-$HOME/.vim/pack}
 
-if ! [[ -d $RBENV_ROOT ]]; then
-  git clone --depth 1 https://github.com/sstephenson/rbenv.git $RBENV_ROOT
-  mkdir $RBENV_ROOT/plugins
-  git clone --depth 1 https://github.com/rbenv/ruby-build.git $RBENV_ROOT/plugins/ruby-build
+if ! [[ -d $ASDF_ROOT ]]; then
+  git clone --depth 1 https://github.com/asdf-vm/asdf.git $ASDF_ROOT --branch v0.8.1
 fi
 
 if ! [[ -d $VIM_PACKAGES_ROOT ]]; then
