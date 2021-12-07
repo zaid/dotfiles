@@ -12,7 +12,7 @@ endif
 " Try to load minpac
 packadd minpac
 
-if exists('*minpac#init')
+if exists('g:loaded_minpac')
   " Init minpac and set the status window to horizontal
   call minpac#init({'status_open': 'horizontal'})
 
