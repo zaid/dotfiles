@@ -67,6 +67,7 @@ set list
 
 " Line numbers
 set number
+set relativenumber
 
 " List chars
 set listchars=""                  " Reset the listchars
