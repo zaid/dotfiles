@@ -47,7 +47,7 @@ if exists('g:loaded_minpac')
   call minpac#add('tpope/vim-tbone')
 
   " Minpac utility functions
-  command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
+  command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update()
   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
 
