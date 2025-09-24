@@ -25,6 +25,7 @@ if exists('g:loaded_minpac')
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-vinegar')
   call minpac#add('tpope/vim-apathy')
+  call minpac#add('yegappan/lsp')
 
   " Language support plugins
   call minpac#add('sheerun/vim-polyglot')
@@ -52,6 +53,8 @@ if exists('g:loaded_minpac')
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
 
   " Plugin settings
+
+  packadd lsp
 
   " Set colorscheme to dracula
   packadd! dracula
