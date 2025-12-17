@@ -17,7 +17,6 @@ The installation script installs the following tools (if it detects that it is r
   - tmux (terminal multiplexer).
   
 The script also clones the following repositories:
-  - asdf (for managing Ruby, Elixir and NodeJS versions).
   - prezto (Zsh distribution).
 
 ## Vim plugins

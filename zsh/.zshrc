@@ -9,11 +9,6 @@ fi
 # Executes commands at the start of an interactive session.
 #
 
-# Source asdf
-if [[ -s "${ZDOTDIR:-$HOME}/.asdf" ]]; then
-  source "${ZDOTDIR:-$HOME}/.asdf/asdf.sh"
-fi
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
