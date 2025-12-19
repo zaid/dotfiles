@@ -25,7 +25,6 @@ call LspAddServer(lspServers)
 # Setup auto-complete and mappings for LSP-supported filetypes
 augroup lsp_group
   autocmd!
-  autocmd User LspAttached setlocal omnifunc=lsp#complete
   autocmd User LspAttached noremap gd :LspGotoDefinition <cr>
   autocmd User LspAttached noremap K :LspHover <cr>
   autocmd User LspAttached noremap [g :LspDiagPrev <cr>
