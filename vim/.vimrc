@@ -85,6 +85,9 @@ set hlsearch    " highlight matches
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 
+" Window/buffer options
+set switchbuf+=uselast
+
 " Keybindings
 " -----------
 
